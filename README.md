@@ -26,7 +26,7 @@ MontadoraFactory é a fábrica abstrata, com um método de criação para cada t
 
 FiatFactory e VolksFactory são as fábricas concretas, cada uma garante que os produtos criados pertencem sempre à mesma família de marca, evitando misturar.
 
-## Parte 3 — O desafio do novo produto (SUV)
+## O problema do novo produto (SUV)
 Ao tentar adicionar o SUV à fábrica abstrata que já existe, surge a limitação clássica do Abstract Factory.
 
 A interface SUV foi criada e as classes FiatPulse e VolksTCross a implementaram sem dificuldade (isso é apenas mais um produto).
@@ -41,7 +41,7 @@ Uma alternativa para cenários em que novos tipos de produto aparecem com frequ�
 
 ## Diagrama de Classes (UML)
 
-### Abstract Factory (Partes 2 e 3 já com SUV integrado)
+### Abstract Factory (já com SUV integrado)
 
 ![Diagrama de classes do Abstract Factory](docs/diagrama-abstract-factory.png)
 

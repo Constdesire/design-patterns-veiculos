@@ -51,7 +51,7 @@ concreto realiza sua respectiva interface de produto (`Sedan`,
 `Hatch`, `SUV`), sempre dentro da mesma família coluna e a garantia
 central que o Abstract Factory oferece.
 
-### Factory Method (Parte 1)
+### Factory Method 
 
 ![Diagrama de classes do Factory Method](docs/diagrama-factory-method.png)
 

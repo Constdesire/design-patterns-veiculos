@@ -30,7 +30,8 @@ projeto criacionais do GoF.
 
 ## Novo produto (SUV)
 
-Ao tentar adicionar o SUV à fábrica abstrata que ja existe, tem o problema do Abstract Factory:
+Ao tentar adicionar o SUV à fábrica abstrata que ja existe, tem o problema do Abstract Factory
+
 A interface `SUV` foi criada e as classes `FiatPulse` e `VolksTCross`
   a implementaram sem dificuldade isso é só mais um produto.
 O problema apareceu na interface `MontadoraFactory` e para que as

@@ -1,11 +1,11 @@
 # Padrões de Criação em Java: Factory Method e Abstract Factory
 
-Projeto acadêmico em **Java (Swing)** que implementa e compara dois padrões de
+Projeto em **Java (Swing)** que implementa e compara dois padrões de
 projeto criacionais do GoF (*Design Patterns: Elements of Reusable
 Object-Oriented Software*, Gamma, Helm, Johnson & Vlissides):
 
-**Factory Method** — pacote [`factorymethod`](src/factorymethod)
-**Abstract Factory** — pacote [`abstractfactory`](src/abstractfactory)
+**Factory Method** pacote [`factorymethod`](src/factorymethod)
+**Abstract Factory** pacote [`abstractfactory`](src/abstractfactory)
 
 ## Factory Method
 

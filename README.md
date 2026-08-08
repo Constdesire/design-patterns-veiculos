@@ -1,4 +1,4 @@
-# Padrões de Criação em Java: Factory Method e Abstract Factory
+# Factory Method e Abstract Factory
 
 Projeto em **Java (Swing)** que implementa e compara dois padrões de
 projeto criacionais do GoF

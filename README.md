@@ -3,8 +3,8 @@
 Projeto que implementa e compara dois padrões de
 projeto criacionais do GoF
 
-**Factory Method** pacote factorymethod(src/factorymethod)
-**Abstract Factory** pacote abstractfactory(src/abstractfactory)
+**Factory Method** pacote [`factorymethod`](src/factorymethod)
+**Abstract Factory** pacote [`abstractfactory`](src/abstractfactory)
 
 ## Factory Method
 

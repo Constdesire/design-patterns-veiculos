@@ -33,11 +33,11 @@ A interface SUV foi criada e as classes FiatPulse e VolksTCross a implementaram 
 
 O problema ocorreu na interface MontadoraFactory: para que as fábricas pudessem criar o novo produto, foi obrigatório alterar a interface da fábrica abstrata, acrescentando SUV criarSUV().
 
-Essa alteração quebra o Princípio Aberto/Fechado (OCP), e toda fábrica concreta existente precisou ser modificada para implementar o novo método. Se houvesse mais montadoras no sistema (ex.: ChevroletFactory), todas elas parariam de compilar até implementarem criarSUV().
+Essa alteração quebra o Princípio Aberto/Fechado (OCP), e toda fábrica concreta existente precisou ser modificada para implementar o novo método. Se houvesse mais montadoras no sistema como ChevroletFactory, todas elas parariam de compilar até implementarem criarSUV().
 
-Esse padrão facilita adicionar novas famílias (como uma montadora inteira) sem tocar no código existente, mas dificulta adicionar um novo produto a todas as famílias já existentes, pois exige alterar a interface da fábrica e, em cascata, todas as suas implementações.
+Esse padrão facilita adicionar novas famílias como uma montadora inteira sem tocar no código que ja existe, mas deixa mais dificil adicionar um novo produto a todas as famílias já existentes, porque exige alterar a interface da fábrica e, em cascata, todas as implementações.
 
-Uma alternativa para cenários em que novos tipos de produto aparecem com frequência seria combinar Abstract Factory com Factory Method por tipo de produto, ou usar um registro dinâmico de criadores (abrindo mão, porém, de parte da segurança em tempo de compilação).
+Uma alternativa para cenários em que novos tipos de produto aparecem com frequência seria combinar Abstract Factory com Factory Method por tipo de produto, ou usar um registro dinâmico de criadores abrindo mão, de parte da segurança em tempo de compilação.
 
 ## Diagrama de Classes (UML)
 

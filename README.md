@@ -1,10 +1,10 @@
 # Factory Method e Abstract Factory
 
-Projeto em **Java (Swing)** que implementa e compara dois padrões de
+Projeto que implementa e compara dois padrões de
 projeto criacionais do GoF
 
-**Factory Method** pacote [`factorymethod`](src/factorymethod)
-**Abstract Factory** pacote [`abstractfactory`](src/abstractfactory)
+**Factory Method** pacote factorymethod(src/factorymethod)
+**Abstract Factory** pacote abstractfactory(src/abstractfactory)
 
 ## Factory Method
 
@@ -45,11 +45,6 @@ Uma alternativa para cenários em que novos tipos de produto aparecem com frequ�
 
 ![Diagrama de classes do Abstract Factory](docs/diagrama-abstract-factory.png)
 
-Fica visível como cada `MontadoraFactory` concreta (`FiatFactory`,
-`VolksFactory`) realiza a fábrica abstrata, e como cada produto
-concreto realiza sua respectiva interface de produto (`Sedan`,
-`Hatch`, `SUV`), sempre dentro da mesma família coluna e a garantia
-central que o Abstract Factory oferece.
 
 ### Factory Method 
 

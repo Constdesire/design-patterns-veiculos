@@ -57,12 +57,10 @@ central que o Abstract Factory oferece.
 
 ## Referências
 
-- GAMMA, E.; HELM, R.; JOHNSON, R.; VLISSIDES, J. *Design Patterns:
-  Elements of Reusable Object-Oriented Software*. Addison-Wesley, 1994.
-- Refactoring.Guru — [Factory Method](https://refactoring.guru/design-patterns/factory-method) e
-  [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory).
-- Oracle — [The Java™ Tutorials: Interfaces](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html).
+GAMMA, E.; HELM, R.; JOHNSON, R.; VLISSIDES, J. *Design Patterns:
+Elements of Reusable Object-Oriented Software*. Addison-Wesley, 1994.
+Refactoring.Guru https://refactoring.guru/design-patterns/factory-method e
+https://refactoring.guru/design-patterns/abstract-factory
+Oracle https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html
 
----
 
-**Nome do aluno:*Desirée*

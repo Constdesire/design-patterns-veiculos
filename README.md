@@ -20,22 +20,22 @@ Em Main, o cliente não escreve new Carro() nem new Moto(), o que reduz o acopla
 
 Sedan e Hatch são os produtos abstratos.
 
-Cada montadora tem suas próprias implementações concretas desses produtos (FiatCronos/FiatArgo, VolksVirtus/VolksPolo).
+Cada montadora tem suas próprias implementações concretas desses produtos.
 
 MontadoraFactory é a fábrica abstrata, com um método de criação para cada tipo de produto da família.
 
 FiatFactory e VolksFactory são as fábricas concretas, cada uma garante que os produtos criados pertencem sempre à mesma família de marca, evitando misturar.
 
-## O problema do novo produto (SUV)
-Ao tentar adicionar o SUV à fábrica abstrata que já existe, surge a limitação clássica do Abstract Factory.
+## O problema do novo produto
+Ao tentar adicionar o SUV à fábrica abstrata que já existe, aparece s limitação do Abstract Factory.
 
-A interface SUV foi criada e as classes FiatPulse e VolksTCross a implementaram sem dificuldade (isso é apenas mais um produto).
+A interface SUV foi criada e as classes FiatPulse e VolksTCross a implementaram sem dificuldade.
 
-O problema ocorreu na interface MontadoraFactory: para que as fábricas pudessem criar o novo produto, foi obrigatório alterar a interface da fábrica abstrata, acrescentando SUV criarSUV().
+O problema acontece na interface MontadoraFactory, porque para que as fábricas pudessem criar o novo produto, foi obrigatório mudar a interface da fábrica abstrata, acrescentando SUV criarSUV().
 
-Essa alteração quebra o Princípio Aberto/Fechado (OCP), e toda fábrica concreta existente precisou ser modificada para implementar o novo método. Se houvesse mais montadoras no sistema como ChevroletFactory, todas elas parariam de compilar até implementarem criarSUV().
+Essa alteração quebra o Princípio Aberto/Fechado (OCP), e toda fábrica concreta que existe precisou ser mudada para implementar o novo método. Se houvesse mais montadoras no sistema como ChevroletFactory, todas elas parariam de compilar até implementarem criarSUV().
 
-Esse padrão facilita adicionar novas famílias como uma montadora inteira sem tocar no código que ja existe, mas deixa mais dificil adicionar um novo produto a todas as famílias já existentes, porque exige alterar a interface da fábrica e, em cascata, todas as implementações.
+Esse padrão ele deixa mais facil adicionar novas famílias como uma montadora inteira sem tocar no código que ja existe, mas deixa mais dificil adicionar um novo produto a todas as famílias já existentes, porque exige alterar a interface da fábrica e, em cascata, todas as implementações.
 
 Uma alternativa para cenários em que novos tipos de produto aparecem com frequência seria combinar Abstract Factory com Factory Method por tipo de produto, ou usar um registro dinâmico de criadores abrindo mão, de parte da segurança em tempo de compilação.
 
@@ -49,14 +49,6 @@ Uma alternativa para cenários em que novos tipos de produto aparecem com frequ�
 ### Factory Method 
 
 ![Diagrama de classes do Factory Method](docs/diagrama-factory-method.png)
-
-## Referências
-
-GAMMA, E.; HELM, R.; JOHNSON, R.; VLISSIDES, J. *Design Patterns:
-Elements of Reusable Object-Oriented Software*. Addison-Wesley, 1994.
-Refactoring.Guru https://refactoring.guru/design-patterns/factory-method e
-https://refactoring.guru/design-patterns/abstract-factory
-Oracle https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html
 
 Desirée Constantino 
 
